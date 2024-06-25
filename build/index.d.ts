@@ -43,4 +43,4 @@ declare class OSSStorageEngine implements StorageEngine {
     delete(key: string, cb: (err: any) => void): void;
 }
 declare const OSSStorage: (opts: OSSStorageEngineOptions) => OSSStorageEngine;
-export { OSSStorage, autoContentType as AUTO_CONTENT_TYPE };
+export { OSSStorage, autoContentType as AUTO_CONTENT_TYPE, OSSStorageEngineOptions, OSSStorageEngine };

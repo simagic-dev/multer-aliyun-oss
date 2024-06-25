@@ -478,12 +478,14 @@ class OSSStorageEngine implements StorageEngine {
   }
 }
 
- const  OSSStorage = (opts: OSSStorageEngineOptions) => {
+const OSSStorage = (opts: OSSStorageEngineOptions): OSSStorageEngine => {
   if (typeof opts !== 'object' || opts === null) {
     throw new TypeError('Expected object for argument options');
-}
-  return new OSSStorageEngine(opts)
+  }
+  return new OSSStorageEngine(opts);
 }
 
 
-export { OSSStorage, autoContentType as AUTO_CONTENT_TYPE };
+
+export { OSSStorage, autoContentType as AUTO_CONTENT_TYPE,
+   OSSStorageEngineOptions, OSSStorageEngine };
