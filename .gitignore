@@ -1,0 +1,38 @@
+# Logs
+logs
+*.log
+data
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+dist-electron
+release
+*.local
+test/k6/*
+
+# Editor directories and files
+.vscode/.debug.env
+.vscode/*
+.idea
+.vs
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.env
+sql.db
+*.pem
+
+comspoe.yaml
+
+# lockfile
+package-lock.json
+pnpm-lock.yaml
