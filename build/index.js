@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.OSSStorage = void 0;
+exports.OSSStorageEngine = exports.OSSStorage = void 0;
 exports.AUTO_CONTENT_TYPE = autoContentType;
 const crypto = require("crypto");
 const stream = require("stream");
@@ -272,6 +272,7 @@ class OSSStorageEngine {
             .catch(cb);
     }
 }
+exports.OSSStorageEngine = OSSStorageEngine;
 const OSSStorage = (opts) => {
     if (typeof opts !== 'object' || opts === null) {
         throw new TypeError('Expected object for argument options');

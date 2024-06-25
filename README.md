@@ -71,8 +71,13 @@ app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
 
+// ts
+// import { OSSStorage, AUTO_CONTENT_TYPE, OSSStorageEngine } from '@simagic/multer-ali-oss';
 
 ```
+
+
+
 
 ### File information
 
@@ -97,7 +102,6 @@ Also include:
 - `originalname`
 - `encoding`
 - `mimetype`
-
 
 
 ### Setting ACL
