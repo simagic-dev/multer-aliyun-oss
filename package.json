@@ -1,6 +1,6 @@
 {
   "name": "@simagic/multer-ali-oss",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Streaming multer storage engine for Aliyun OSS.",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -21,9 +21,10 @@
     "streaming"
   ],
   "files": [
-    "src",
-    "build"
+    "build/**/*.js",
+    "build/**/*.d.ts"
   ],
+
   "bugs": {
     "url": "https://github.com/simagic-dev/multer-aliyun-oss/issues"
   },
@@ -36,16 +37,18 @@
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
-
   "devDependencies": {
     "@types/ali-oss": "^6.16.11",
     "typescript": "^5.5.2",
-    "@types/node": "^20.14.8"
+    "@types/node": "^20.14.8",
+    "ali-oss": "^6.21.0"
+  },
+  "peerDependencies": {
+    "ali-oss": ">=6.0.0"
   },
   "dependencies": {
     "@types/express": "^4.17.21",
     "@types/multer": "^1.4.11",
-    "ali-oss": "^6.20.0",
     "file-type": "3.3.0",
     "html-comment-regex": "1.1.2",
     "multer": "^1.4.5-lts.1",
